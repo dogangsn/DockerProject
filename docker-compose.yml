@@ -1,0 +1,10 @@
+version : "3.7"
+services : 
+    orderdb : 
+        container_name : orderdb
+        image : mcr.microsoft.com/mssql/server:2019-latest
+        ports : 
+            - "1444:1433"
+        environment : 
+            SA_PASSWORD : "123D654!"
+            ACCEPT_EULA : "Y"
